@@ -1,0 +1,10 @@
+from  pydantic import BaseModel
+from datetime import datetime
+
+class MetadataCreate(BaseModel):
+	filename: str
+	username: str
+	width: int
+	n_channels: int
+	date: datetime		
+	size: int
